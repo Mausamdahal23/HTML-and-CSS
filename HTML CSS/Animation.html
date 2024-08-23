@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="Animation">I</span>
+    <br>
+    <span class="Animation">A</span>
+    
+    <span class="Animation">M</span>
+    <br>
+    <span class="Animation">M</span>
+    <span class="Animation">A</span>
+    <span class="Animation">U</span>
+    <span class="Animation">S</span>
+    <span class="Animation">A</span>
+    <span class="Animation">M</span>
+   <br>
+    
+    <span class="Animation">D</span>
+    <span class="Animation">A</span>
+    <span class="Animation">H</span>
+    <span class="Animation">A</span>
+    <span class="Animation">L</span>
+</body>
+</html>
+
+<style>
+    body{
+        background-color: darkolivegreen;
+
+    }
+    .Animation{
+        font-size:3rem;
+        font-weight:bold;
+        opacity:0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease forwards, colorChange 3s infinite alternate;
+    }
+    .Animation:nth-child(1) { animation-delay: 0.1s; }
+    .Animation:nth-child(2) { animation-delay: 0.3s; }
+    .Animation:nth-child(3) { animation-delay: 0.4s; }
+    .Animation:nth-child(4) { animation-delay: 0.5s; }
+    .Animation:nth-child(5) { animation-delay: 0.6s; }
+    .Animation:nth-child(6) { animation-delay: 0.7s; }
+    .Animation:nth-child(7) { animation-delay: 0.8s; }
+    .Animation:nth-child(8) { animation-delay: 0.9s; }
+    .Animation:nth-child(9) { animation-delay: 0.4s; }
+    .Animation:nth-child(10) { animation-delay: 0.5s; }
+    .Animation:nth-child(11) { animation-delay: 0.6s; }
+    .Animation:nth-child(12) { animation-delay: 0.7s; }
+    .Animation:nth-child(13) { animation-delay: 0.8s; }
+    .Animation:nth-child(14) { animation-delay: 0.9s; }
+     @keyframes fadeInUp{
+        0% {
+            opacity:0;
+            transform: translateY(50px);
+        }
+        100%{
+            opacity:1;
+            transform: translateY(0px);
+        }
+  
+     }
+    @keyframes colorchange{
+        3%{color:red;}
+        40%{color:white;}
+        70%{color:yellow;}
+        100%{color:greenyellow}
+
+    }
+        
+ 
+</style>
